@@ -1,6 +1,8 @@
 # Duckduino-microSD
 Interpreter that runs on an arduino, decodes and executes ducky script on a microSD card.
 
+THIS IS NOT MY ORIGINAL DESIGN! THIS IDEA CAME FROM @saytonic I just sourced parts and put the kits together to hand out. I have am going to make a few more changes do to having trouble with some things on windows 10. 
+
 ## Benefits Over Alternatives
 Once the arduino has been programmed, you need only deal with ducky scripts on a microSD card. No reprogramming the arduino to change scripts!
 
