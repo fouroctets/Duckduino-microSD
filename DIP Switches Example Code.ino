@@ -18,17 +18,28 @@ boolean first = true;
 void setup() { 
   String dip = ""; // Name of the file that will be opened
 
-  // Sets the given pins as switches for the dip switches
+  // Sets the given pins as switches for the dip switches. If you are using 4 pos switch you only need 6,7,8 and 9. The rest can be deleted.
+ // pinMode(2, INPUT_PULLUP);
+ // pinMode(3, INPUT_PULLUP);
+ // pinMode(4, INPUT_PULLUP);
+ // pinMode(5, INPUT_PULLUP);
   pinMode(6, INPUT_PULLUP);
   pinMode(7, INPUT_PULLUP);
   pinMode(8, INPUT_PULLUP);
   pinMode(9, INPUT_PULLUP);
+ // pinMode(10, INPUT_PULLUP);
   
-  // Switches are checked, dip string is contructed
+  // Switches are checked, dip string is contructed. If you are using 4 pos switch you only need 6,7,8 and 9. The rest can be deleted.
+  //if (digitalRead(2) == LOW){dip += "1";} else {dip += "0";}
+  //if (digitalRead(3) == LOW){dip += "1";} else {dip += "0";}
+  //if (digitalRead(4) == LOW){dip += "1";} else {dip += "0";}
+  //if (digitalRead(5) == LOW){dip += "1";} else {dip += "0";}
   if (digitalRead(6) == LOW){dip += "1";} else {dip += "0";}
   if (digitalRead(7) == LOW){dip += "1";} else {dip += "0";}
   if (digitalRead(8) == LOW){dip += "1";} else {dip += "0";}
   if (digitalRead(9) == LOW){dip += "1";} else {dip += "0";}
+  //if (digitalRead(10) == LOW){dip += "1";} else {dip += "0";}
+
 
   dip += ".txt";
 
